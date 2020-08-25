@@ -120,6 +120,53 @@ body {
   margin: .3rem 1rem;
 }
 
+.header__icons ul :nth-child(1) {
+  -webkit-animation: moveIn .5s ease-out;
+          animation: moveIn .5s ease-out;
+}
+
+.header__icons ul :nth-child(2) {
+  -webkit-animation: moveIn 1s ease-out;
+          animation: moveIn 1s ease-out;
+}
+
+.header__icons ul :nth-child(3) {
+  -webkit-animation: moveIn 1.5s ease-out;
+          animation: moveIn 1.5s ease-out;
+}
+
+@-webkit-keyframes moveIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  80% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+  80% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 .form {
   margin-top: 1rem;
   height: 80vh;

@@ -71,11 +71,12 @@ body {
     align-items: center;
     color: #8d9096;
 
+
     &__main {
         font-size: 2.8rem;
     }
 
-    &__icons {
+    &__icons {   
         
         ul {
             display: flex;
@@ -86,9 +87,35 @@ body {
             li {                
                 margin: .3rem 1rem;
             }
+
+            :nth-child(1) {
+                animation: moveIn .5s ease-out;
+            }
+
+            :nth-child(2) {
+                animation: moveIn 1s ease-out;
+            }
+
+            :nth-child(3) {
+                animation: moveIn 1.5s ease-out;
+            }
         }
     }
 
+}
+
+@keyframes moveIn{
+    0% {
+        opacity: 0;
+        transform: translateX(5rem);
+    }
+    80% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .form {
